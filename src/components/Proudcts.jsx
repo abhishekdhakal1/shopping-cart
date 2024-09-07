@@ -45,7 +45,7 @@ function Product() {
   }
 
   return (
-    <div className="h-screen mx-auto p-4 bg-indigo-200">
+    <div className="h-screen mx-auto p-4 bg-blue-200">
       <h1 className="text-2xl font-bold mb-4">Shopping Cart</h1>
       <div className="grid grid-cols-2 gap-4">
         <div>
@@ -69,7 +69,10 @@ function Product() {
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold mb-2">Cart</h2>
+          <h2 className="text-xl mb-2 font-semibold flex items-center">
+            Cart
+            <FaShoppingCart className="ml-2 text-gray-600" />
+          </h2>
           {cart.length === 0 ? (
             <p>Your cart is empty.</p>
           ) : (
